@@ -3,7 +3,7 @@
 BACKUP_DIR=$HOME'/1c_backup'
 YADISC_DIR='disk:/server_backups/'
  
-# найти последний .zip файл в папке бэкапов
+# найти последний .tar.gz файл в папке бэкапов
 LAST_BACKUP=$(ls -t $BACKUP_DIR/*.tar.gz | head -1)
  
  
@@ -14,7 +14,7 @@ then
 fi
  
  
-ydcmd put $LAST_BACKUP $YADISC_DIR
+ydcmd put $LAST_BACKUP $YADISC_DIR -timeout=300 --retries=3
  
 rm -f $LAST_BACKUP
  
