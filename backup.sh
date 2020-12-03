@@ -18,6 +18,6 @@ fi
 NOW=`date +%Y-%m-%d`
  
 # Архивация бэкапа
-tar cfz $ARCHIVATE_TO/$SERVER_NAME-$NOW.tar.gz $ARCHIVATE_PATH
+tar cfz $ARCHIVATE_TO/$SERVER_NAME-$NOW.tar.new $ARCHIVATE_PATH
  
 echo 'backup done!'
