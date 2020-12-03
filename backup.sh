@@ -17,9 +17,9 @@ fi
 # текущая дата
 NOW=`date +%Y-%m-%d`
 
-cd $ARCHIVATE_PATH
+
 
 # Архивация бэкапа
-tar -czf $ARCHIVATE_TO/$SERVER_NAME-$NOW.tar.new $ARCHIVATE_PATH
+tar -czf $ARCHIVATE_TO/$SERVER_NAME-$NOW.tar.new -C $ARCHIVATE_PATH ./$ARCHIVATE_TO
  
 echo 'backup done!'
