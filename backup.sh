@@ -18,6 +18,7 @@ fi
 NOW=`date +%Y-%m-%d`
  
 # Архивация бэкапа
-tar -czf $ARCHIVATE_TO/$SERVER_NAME-$NOW.tar.new $ARCHIVATE_PATH
+zip -r "/tmp/$SERVER_NAME-$NOW.zip2" $ARCHIVATE_PATH > /dev/null 2>&1
+mv "/tmp/$SERVER_NAME-$NOW.zip2" "$ARCHIVATE_TO/$SERVER_NAME-$NOW.zip2"
  
 echo 'backup done!'
