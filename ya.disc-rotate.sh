@@ -1,8 +1,8 @@
 #!/bin/bash
-SERVER_NAME='MyOwnServer'
+SERVER_NAME='PetrServer'
 CONFIG_PATH=$HOME'/you/.ydcmd.cfg'
 YD_COMMAND='/usr/bin/ydcmd --config='$CONFIG_PATH
-YADISC_DIR='disk:/path-in-ya.disk/'
+YADISC_DIR='disk:/server_backups/'
  
 LIST=$($YD_COMMAND ls $YADISC_DIR)
 ARCHIVES=$(echo "$LIST" | sed -r 's/.*[[:space:]](.*\.zip).*$//g')
