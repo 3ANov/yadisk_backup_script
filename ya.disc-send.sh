@@ -14,7 +14,7 @@ then
 fi
  
  
-/usr/bin/ydcmd put $LAST_BACKUP $YADISC_DIR
+ydcmd put $LAST_BACKUP $YADISC_DIR
  
 rm -f $LAST_BACKUP
  

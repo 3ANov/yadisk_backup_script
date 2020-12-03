@@ -17,8 +17,7 @@ fi
 # текущая дата
 NOW=`date +%Y-%m-%d`
  
-# Запакуем в темпах и перенесем в нужную папку
-zip -r "/tmp/$SERVER_NAME-$NOW.zip" $ARCHIVATE_PATH > /dev/null 2>&1
-mv "/tmp/$SERVER_NAME-$NOW.zip" "$ARCHIVATE_TO/$SERVER_NAME-$NOW.zip"
+# Архивация бэкапа
+tar cfz $ARCHIVATE_TO/$SERVER_NAME-$NOW.tar.gz $ARCHIVATE_PATH
  
 echo 'backup done!'
