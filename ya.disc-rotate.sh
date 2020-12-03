@@ -1,6 +1,6 @@
 #!/bin/bash
 SERVER_NAME='MyOwnServer'
-CONFIG_PATH='/home/you/.ydcmd.cfg'
+CONFIG_PATH=$HOME'/you/.ydcmd.cfg'
 YD_COMMAND='/usr/bin/ydcmd --config='$CONFIG_PATH
 YADISC_DIR='disk:/path-in-ya.disk/'
  
