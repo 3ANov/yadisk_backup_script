@@ -14,7 +14,7 @@ then
 fi
  
  
-ydcmd put $LAST_BACKUP $YADISC_DIR -timeout=300 --retries=3
+ydcmd put $LAST_BACKUP $YADISC_DIR --timeout=300 --retries=3
  
 rm -f $LAST_BACKUP
  
