@@ -14,9 +14,9 @@ then
 fi
  
  
-ydcmd put $LAST_DB_FILE $YADISC_DIR --timeout=300 --retries=3 --rsync
+ydcmd --rsync put $BACKUP_DIR $YADISC_DIR --timeout=300 --retries=3 
 
-ydcmd get $YADISC_DIR $BACKUP_DIR --timeout=300 --retries=3 --rsync
+ydcmd --rsync get $YADISC_DIR $BACKUP_DIR --timeout=300 --retries=3 
 
  
 echo 'done!'
