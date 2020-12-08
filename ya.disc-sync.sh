@@ -14,7 +14,7 @@ then
 fi
  
  
-ydcmd --rsync get $YADISC_DIR $BACKUP_DIR --timeout=300 --retries=3 
+ydcmd get $YADISC_DIR $BACKUP_DIR --timeout=300 --retries=3 
 
 ydcmd --rsync put $BACKUP_DIR --timeout=300 --retries=3 
 
