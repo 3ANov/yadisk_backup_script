@@ -3,17 +3,21 @@
 BACKUP_DIR=$HOME'/1c_backup'
 YADISC_DIR='disk:/1c_backup' 
 
+FILE_FROM_MAIN_SERVER='message_aa_bb.txt'
+FILE_FROM_SLAVE_SERVER='message_bb_aa.txt'
+
+
 # !!! Исправить расширение !!!
 # Сообщение с главного сервера на второстепенный (загружается в диск)
-FROM_MAIN_TO_SLAVE_MESSAGE_LOCAL=$BACKUP_DIR/'message_aa_bb.txt'
-FROM_MAIN_TO_SLAVE_MESSAGE_YADISK=$YADISC_DIR/'message_aa_bb.txt'
+FROM_MAIN_TO_SLAVE_MESSAGE_LOCAL=$BACKUP_DIR/$FILE_FROM_MAIN_SERVER
+FROM_MAIN_TO_SLAVE_MESSAGE_YADISK=$YADISC_DIR/$FILE_FROM_MAIN_SERVER
 
 
 
 # !!! Исправить расширение !!!
 # Сообщение с второстепенного сервера на главный (выгружается с диска)
-FROM_SLAVE_TO_MAIN_MESSAGE_YADISK=$YADISC_DIR/'message_bb_aa.txt'
-FROM_SLAVE_TO_MAIN_MESSAGE_LOCAL=$BACKUP_DIR/'message_bb_aa.txt'
+FROM_SLAVE_TO_MAIN_MESSAGE_YADISK=$YADISC_DIR/$FILE_FROM_SLAVE_SERVER
+FROM_SLAVE_TO_MAIN_MESSAGE_LOCAL=$BACKUP_DIR/$FILE_FROM_SLAVE_SERVER
 
 
 
