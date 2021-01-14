@@ -2,7 +2,7 @@
 
 Скрипт для бэкапа из [этой статьи](https://saribzhanov.ru/tehno/rezervnoe-kopirovanie-sajta-na-yandeks-disk-backup-na-ya-disk/)
 
-Скрипт для синхронизации распределённой базы 1с через яндекс-диск
+Скрипт для синхронизации распределённой базы 1с через яндекс-диск (Файл **ya.disc-sync.sh**)  
 
 Согласно этой [статье](https://blog.vpsville.ru/blog/howto/177.html) необходимо:   
 * установить ydcmd и получить токен  
